@@ -1,0 +1,12 @@
+---
+
+- name: Simple Test
+  hosts: "{{ servers }}"
+  become: yes
+  tasks:
+    
+  - name: Delete a testfile
+    ansible.builtin.file:
+      path: "/home/{{ user_id_personal }}/testfile.txt"
+      state: absent
+      

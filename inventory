@@ -1,0 +1,10 @@
+[group_aa]
+"{{ hostname1 }}" ansible_port="{{ port_changed }}" ansible_user="{{ user_id_personal }}" ansible_ssh_pass="{{ user_password_personal }}" ansible_become_pass="{{ user_password_personal }}"
+
+[group_bb]
+"{{ hostname2 }}" ansible_port="{{ port_changed }}" ansible_user="{{ user_id_personal }}" ansible_ssh_pass="{{ user_password_personal2 }}" ansible_become_pass="{{ user_password_personal2 }}"
+"{{ hostname3 }}" ansible_port="{{ port }}" ansible_user="{{ user_id_personal }}" ansible_ssh_pass="{{ user_password_personal }}" ansible_become_pass="{{ user_password_personal }}"
+
+
+[group_cc]
+"{{ hostname4 }}" ansible_port="{{ port }}" ansible_user="{{ user_id_personal }}" ansible_ssh_pass="{{ user_password_personal2 }}" ansible_become_pass="{{ user_password_personal2 }}"
