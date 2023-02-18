@@ -1,8 +1,8 @@
 To run using the command:
-ansible-playbook -i ./inventory -e servers=group_test ./playbook.yml --vault-password-file ./group_vars/all/.vault_password.txt
+ansible-playbook -i ./inventory -e servers=group_aa ./playbook.yml --vault-password-file ./group_vars/all/.vault_password.txt
 
 And you can use the following command to revert what was done with the previous playbook:
-ansible-playbook -i ./inventory -e servers=group_test ./playbook_rollback.yml --vault-password-file ./group_vars/all/.vault_password.txt
+ansible-playbook -i ./inventory -e servers=group_aa ./playbook_rollback.yml --vault-password-file ./group_vars/all/.vault_password.txt
 
 
 To edit the Vault file
